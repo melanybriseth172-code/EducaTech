@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="EducaTech ofrece programas de formación técnica en desarrollo de software, electrónica y administración.">
+
+    <title>EducaTech | Formación Técnica</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+        PANTALLA DE ACCESO
+    =================================================== -->
+
+    <div id="pantallaAcceso" class="pantalla-acceso">
+
+        <div class="acceso-fondo"></div>
+
+        <div class="acceso-contenido">
+
+            <div class="acceso-logo">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>EducaTech</span>
+            </div>
+
+            <div class="login-card">
+
+                <div class="text-center mb-4">
+
+                    <div class="icono-login">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <p class="texto-pequeno">
+                        PLATAFORMA EDUCATIVA
+                    </p>
+
+                    <h1>Bienvenido</h1>
+
+                    <p>
+                        Ingresa para conocer nuestros programas
+                        de formación técnica.
+                    </p>
+
+                </div>
+
+
+                <form id="formularioLogin">
+
+                    <div class="mb-3">
+
+                        <label for="loginCorreo" class="form-label">
+                            Correo electrónico
+                        </label>
+
+                        <div class="input-icono">
+
+                            <i class="bi bi-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="loginCorreo"
+                                class="form-control"
+                                placeholder="ejemplo@gmail.com"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="loginPassword" class="form-label">
+                            Contraseña
+                        </label>
+
+                        <div class="input-password">
+
+                            <i class="bi bi-lock"></i>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                class="form-control"
+                                placeholder="Ingresa tu contraseña"
+                                required>
+
+                            <button
+                                type="button"
+                                id="btnMostrarPassword"
+                                class="btn-ojo"
+                                aria-label="Mostrar contraseña">
+
+                                <i class="bi bi-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="mensajeLogin"
+                        class="mensaje-login">
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-acceso w-100">
+
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        Ingresar a EducaTech
+
+                    </button>
+
+
+                    <div class="separador">
+                        <span>o</span>
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="btnInvitado"
+                        class="btn btn-outline-primary w-100">
+
+                        <i class="bi bi-eye"></i>
+                        Explorar como visitante
+
+                    </button>
+
+
+                    <p class="texto-acceso-final">
+                        Al ingresar aceptas utilizar esta plataforma
+                        con fines educativos.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+        SITIO PRINCIPAL
+    =================================================== -->
+
+    <div id="sitioPrincipal" class="sitio-principal">
+
+
+        <!-- ==================================================
+            HEADER
+        =================================================== -->
+
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <div class="container">
+
+                    <a class="navbar-brand" href="#inicio">
+
+                        <i class="bi bi-mortarboard-fill"></i>
+
+                        <strong>EducaTech</strong>
+
+                    </a>
+
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+
+                    <div
+                        class="collapse navbar-collapse"
+                        id="menu">
+
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">
+                                    Inicio
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#programas">
+                                    Programas
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">
+                                    Nosotros
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiencia">
+                                    Experiencia
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#registro">
+                                    Registro
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">
+                                    Contacto
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                        <span class="usuario-logueado">
+                            <i class="bi bi-person-circle"></i>
+                            Sesión activa
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ==================================================
+            CONTENIDO PRINCIPAL
+        =================================================== -->
+
+        <main>
+
+
+            <!-- ==================================================
+                HERO
+            =================================================== -->
+
+            <section id="inicio" class="hero">
+
+                <div class="hero-overlay"></div>
+
+                <div class="container hero-contenido">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-7">
+
+                            <span class="badge-hero">
+                                FORMACIÓN TÉCNICA DE CALIDAD
+                            </span>
+
+                            <h1>
+                                Forma tu futuro con
+                                <span>EducaTech</span>
+                            </h1>
+
+                            <p class="lead">
+                                Desarrolla conocimientos y habilidades
+                                mediante programas de formación técnica
+                                preparados para las necesidades del mundo actual.
+                            </p>
+
+
+                            <div class="mt-4">
+
+                                <a
+                                    href="#programas"
+                                    class="btn btn-primary btn-lg me-2">
+
+                                    <i class="bi bi-mortarboard"></i>
+                                    Ver programas
+
+                                </a>
+
+
+                                <a
+                                    href="#registro"
+                                    class="btn btn-light btn-lg">
+
+                                    <i class="bi bi-pencil-square"></i>
+                                    Inscribirme
+
+                                </a>
+
+                            </div>
+
+
+                            <div class="hero-info">
+
+                                <div>
+                                    <strong>+500</strong>
+                                    <span>Estudiantes</span>
+                                </div>
+
+                                <div>
+                                    <strong>3</strong>
+                                    <span>Programas</span>
+                                </div>
+
+                                <div>
+                                    <strong>100%</strong>
+                                    <span>Orientación práctica</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-5">
+
+                            <div class="hero-imagen-secundaria">
+
+                                <img
+                                    src="estudiantes.jpeg"
+                                    alt="Estudiantes de EducaTech">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                BENEFICIOS
+            =================================================== -->
+
+            <section class="beneficios">
+
+                <div class="container">
+
+                    <div class="section-heading text-center">
+
+                        <span class="texto-pequeno">
+                            ¿POR QUÉ EDUCATech?
+                        </span>
+
+                        <h2>
+                            Una formación pensada para tu futuro
+                        </h2>
+
+                        <p>
+                            Aprende, practica y desarrolla habilidades
+                            que podrás aplicar en el mundo profesional.
+                        </p>
+
+                    </div>
+
+
+                    <div class="beneficios-grid">
+
+                        <article class="beneficio">
+
+                            <div class="icono">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+
+                            <h3>
+                                Formación técnica
+                            </h3>
+
+                            <p>
+                                Programas orientados al desarrollo
+                                académico y profesional.
+                            </p>
+
+                        </article>
+
+
+                        <article class="beneficio">
+
+                            <div class="icono">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+
+                            <h3>
+                                Aprendizaje práctico
+                            </h3>
+
+                            <p>
+                                Actividades y proyectos para aplicar
+                                los conocimientos adquiridos.
+                            </p>
+
+                        </article>
+
+
+                        <article class="beneficio">
+
+                            <div class="icono">
+                                <i class="bi bi-person-workspace"></i>
+                            </div>
+
+                            <h3>
+                                Docentes especializados
+                            </h3>
+
+                            <p>
+                                Acompañamiento durante todo el proceso
+                                de formación.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                PROGRAMAS
+            =================================================== -->
+
+            <section id="programas" class="seccion">
+
+                <div class="container">
+
+                    <div class="section-heading text-center">
+
+                        <span class="texto-pequeno">
+                            NUESTRA OFERTA ACADÉMICA
+                        </span>
+
+                        <h2>
+                            Programas de formación
+                        </h2>
+
+                        <p>
+                            Elige el programa que más se adapte
+                            a tus intereses y objetivos.
+                        </p>
+
+                    </div>
+
+
+                    <div class="row g-4 mt-3">
+
+
+                        <!-- SOFTWARE -->
+
+                        <div class="col-md-4">
+
+                            <article class="programa-card h-100">
+
+                                <div class="imagen-card">
+
+                                    <img
+                                        src="software.jpeg"
+                                        class="card-img-top"
+                                        alt="Estudiantes de desarrollo de software">
+
+                                    <span class="programa-badge">
+                                        Tecnología
+                                    </span>
+
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <h3>
+                                        Desarrollo de Software
+                                    </h3>
+
+                                    <p>
+                                        Aprende programación,
+                                        desarrollo web y tecnologías
+                                        digitales.
+                                    </p>
+
+                                    <ul class="lista-programa">
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Programación
+                                        </li>
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Desarrollo web
+                                        </li>
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Bases de datos
+                                        </li>
+
+                                    </ul>
+
+                                    <a
+                                        href="#registro"
+                                        class="btn btn-primary">
+
+                                        Me interesa
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <!-- ELECTRÓNICA -->
+
+                        <div class="col-md-4">
+
+                            <article class="programa-card h-100">
+
+                                <div class="imagen-card">
+
+                                    <img
+                                        src="electrónica.jpeg"
+                                        class="card-img-top"
+                                        alt="Estudiantes de electrónica">
+
+                                    <span class="programa-badge">
+                                        Tecnología
+                                    </span>
+
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <h3>
+                                        Electrónica
+                                    </h3>
+
+                                    <p>
+                                        Aprende sobre sistemas,
+                                        componentes y aplicaciones
+                                        electrónicas.
+                                    </p>
+
+                                    <ul class="lista-programa">
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Circuitos
+                                        </li>
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Sistemas electrónicos
+                                        </li>
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Automatización
+                                        </li>
+
+                                    </ul>
+
+                                    <a
+                                        href="#registro"
+                                        class="btn btn-primary">
+
+                                        Me interesa
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <!-- ADMINISTRACIÓN -->
+
+                        <div class="col-md-4">
+
+                            <article class="programa-card h-100">
+
+                                <div class="imagen-card">
+
+                                    <img
+                                        src="administración.jpeg"
+                                        class="card-img-top"
+                                        alt="Estudiantes de administración">
+
+                                    <span class="programa-badge">
+                                        Gestión
+                                    </span>
+
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <h3>
+                                        Administración
+                                    </h3>
+
+                                    <p>
+                                        Desarrolla conocimientos para
+                                        la gestión y organización
+                                        de empresas.
+                                    </p>
+
+                                    <ul class="lista-programa">
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Gestión empresarial
+                                        </li>
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Organización
+                                        </li>
+
+                                        <li>
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Emprendimiento
+                                        </li>
+
+                                    </ul>
+
+                                    <a
+                                        href="#registro"
+                                        class="btn btn-primary">
+
+                                        Me interesa
+
+                                    </a>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                NOSOTROS
+            =================================================== -->
+
+            <section
+                id="nosotros"
+                class="seccion-nosotros">
+
+                <div class="container">
+
+                    <div class="row align-items-center g-5">
+
+                        <div class="col-lg-6">
+
+                            <div class="nosotros-imagen">
+
+                                <img
+                                    src="aula.jpeg"
+                                    alt="Aula de formación técnica"
+                                    class="img-fluid rounded">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+                            <span class="texto-pequeno">
+                                SOBRE NOSOTROS
+                            </span>
+
+                            <h2>
+                                Educación orientada al futuro
+                            </h2>
+
+                            <p>
+                                En EducaTech buscamos brindar una formación
+                                técnica que permita a nuestros estudiantes
+                                desarrollar conocimientos y habilidades
+                                útiles para su crecimiento académico
+                                y profesional.
+                            </p>
+
+                            <p>
+                                Nuestra propuesta combina aprendizaje
+                                práctico, herramientas digitales y
+                                acompañamiento durante la formación.
+                            </p>
+
+
+                            <div class="nosotros-lista">
+
+                                <div>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Formación práctica
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Docentes especializados
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Tecnología aplicada
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Orientación profesional
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                EXPERIENCIA
+            =================================================== -->
+
+            <section
+                id="experiencia"
+                class="galeria seccion">
+
+                <div class="container">
+
+                    <div class="section-heading text-center">
+
+                        <span class="texto-pequeno">
+                            NUESTRA EXPERIENCIA
+                        </span>
+
+                        <h2>
+                            Aprende haciendo
+                        </h2>
+
+                        <p>
+                            Conoce algunos de los espacios, actividades
+                            y experiencias de EducaTech.
+                        </p>
+
+                    </div>
+
+
+                    <div class="galeria-grid">
+
+
+                        <div class="galeria-item galeria-grande">
+
+                            <img
+                                src="laboratorio.jpeg"
+                                alt="Laboratorio de formación técnica">
+
+                            <div class="galeria-overlay">
+
+                                <h3>Laboratorios</h3>
+
+                                <p>
+                                    Espacios preparados para el
+                                    aprendizaje práctico.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="galeria-item">
+
+                            <img
+                                src="programación.jpeg"
+                                alt="Estudiantes realizando programación">
+
+                            <div class="galeria-overlay">
+
+                                <h3>Programación</h3>
+
+                                <p>
+                                    Desarrollo de habilidades digitales.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="galeria-item">
+
+                            <img
+                                src="robotica.jpeg"
+                                alt="Estudiantes realizando robótica">
+
+                            <div class="galeria-overlay">
+
+                                <h3>Robótica</h3>
+
+                                <p>
+                                    Innovación y tecnología aplicada.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="galeria-item">
+
+                            <img
+                                src="taller.jpeg"
+                                alt="Taller práctico">
+
+                            <div class="galeria-overlay">
+
+                                <h3>Talleres</h3>
+
+                                <p>
+                                    Aprendizaje basado en la práctica.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="galeria-item galeria-grande">
+
+                            <img
+                                src="proyecto.jpeg"
+                                alt="Estudiantes desarrollando un proyecto">
+
+                            <div class="galeria-overlay">
+
+                                <h3>Proyectos</h3>
+
+                                <p>
+                                    Aplicamos conocimientos para
+                                    resolver problemas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="galeria-item">
+
+                            <img
+                                src="tecnologia.jpeg"
+                                alt="Tecnología utilizada en EducaTech">
+
+                            <div class="galeria-overlay">
+
+                                <h3>Tecnología</h3>
+
+                                <p>
+                                    Herramientas digitales para el futuro.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                VIDA EDUCATIVA
+            =================================================== -->
+
+            <section
+                id="vida-educativa"
+                class="vida-educativa seccion">
+
+                <div class="container">
+
+                    <div class="section-heading text-center">
+
+                        <span class="texto-pequeno">
+                            VIDA EDUCATIVA
+                        </span>
+
+                        <h2>
+                            Una comunidad que crece contigo
+                        </h2>
+
+                    </div>
+
+
+                    <div class="vida-grid">
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="docente.jpeg"
+                                alt="Docente acompañando estudiantes">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Docentes especializados
+                                </h3>
+
+                                <p>
+                                    Profesionales que acompañan a los
+                                    estudiantes durante su aprendizaje.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="estudiantes 2.jpeg"
+                                alt="Grupo de estudiantes">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Comunidad estudiantil
+                                </h3>
+
+                                <p>
+                                    Un entorno para compartir experiencias
+                                    y conocimientos.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="estudiantes 3.jpeg"
+                                alt="Estudiantes trabajando juntos">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Trabajo colaborativo
+                                </h3>
+
+                                <p>
+                                    Fomentamos el trabajo en equipo y
+                                    la resolución de problemas.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="biblbioteca.jpeg"
+                                alt="Biblioteca y espacio de estudio">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Espacios de estudio
+                                </h3>
+
+                                <p>
+                                    Ambientes que favorecen la concentración
+                                    y el desarrollo académico.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="campus.jpeg"
+                                alt="Campus educativo">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Espacios educativos
+                                </h3>
+
+                                <p>
+                                    Instalaciones pensadas para una
+                                    experiencia educativa integral.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="equipo.jpeg"
+                                alt="Equipo de trabajo">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Nuestro equipo
+                                </h3>
+
+                                <p>
+                                    Personas comprometidas con la
+                                    formación de nuestros estudiantes.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="vida-card">
+
+                            <img
+                                src="graduación.jpeg"
+                                alt="Estudiantes celebrando su graduación">
+
+                            <div class="vida-card-body">
+
+                                <h3>
+                                    Nuevas oportunidades
+                                </h3>
+
+                                <p>
+                                    Preparamos a nuestros estudiantes
+                                    para alcanzar nuevas metas.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                REGISTRO
+            =================================================== -->
+
+            <section id="registro" class="registro seccion">
+
+                <div class="container">
+
+                    <div class="section-heading text-center">
+
+                        <span class="texto-pequeno">
+                            INSCRIPCIÓN
+                        </span>
+
+                        <h2>
+                            Regístrate en EducaTech
+                        </h2>
+
+                        <p>
+                            Completa tus datos para recibir información
+                            sobre nuestros programas.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="formularioRegistro"
+                        action="#"
+                        method="post"
+                        class="formulario-container">
+
+                        <div class="row">
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label
+                                    for="nombre"
+                                    class="form-label">
+
+                                    Nombre completo
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    class="form-control"
+                                    placeholder="Escribe tu nombre"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label
+                                    for="correo"
+                                    class="form-label">
+
+                                    Correo electrónico
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    name="correo"
+                                    class="form-control"
+                                    placeholder="ejemplo@gmail.com"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label
+                                    for="telefono"
+                                    class="form-label">
+
+                                    Número de celular
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="telefono"
+                                    name="telefono"
+                                    class="form-control"
+                                    placeholder="999 999 999"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label
+                                    for="programa"
+                                    class="form-label">
+
+                                    Programa de interés
+
+                                </label>
+
+                                <select
+                                    id="programa"
+                                    name="programa"
+                                    class="form-select"
+                                    required>
+
+                                    <option value="">
+                                        Selecciona un programa
+                                    </option>
+
+                                    <option value="software">
+                                        Desarrollo de Software
+                                    </option>
+
+                                    <option value="electronica">
+                                        Electrónica
+                                    </option>
+
+                                    <option value="administracion">
+                                        Administración
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12 mb-3">
+
+                                <label
+                                    for="modalidad"
+                                    class="form-label">
+
+                                    Modalidad
+
+                                </label>
+
+                                <select
+                                    id="modalidad"
+                                    name="modalidad"
+                                    class="form-select"
+                                    required>
+
+                                    <option value="">
+                                        Selecciona una modalidad
+                                    </option>
+
+                                    <option value="presencial">
+                                        Presencial
+                                    </option>
+
+                                    <option value="virtual">
+                                        Virtual
+                                    </option>
+
+                                    <option value="semipresencial">
+                                        Semipresencial
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12 mb-3">
+
+                                <label
+                                    for="mensaje"
+                                    class="form-label">
+
+                                    Mensaje o consulta
+
+                                </label>
+
+                                <textarea
+                                    id="mensaje"
+                                    name="mensaje"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Escribe tu consulta"></textarea>
+
+                            </div>
+
+
+                            <div class="col-12 mb-4">
+
+                                <div class="form-check">
+
+                                    <input
+                                        type="checkbox"
+                                        id="terminos"
+                                        name="terminos"
+                                        class="form-check-input"
+                                        required>
+
+                                    <label
+                                        for="terminos"
+                                        class="form-check-label">
+
+                                        Acepto el registro de mis datos
+                                        para recibir información.
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12 text-center">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary btn-lg">
+
+                                    <i class="bi bi-send"></i>
+                                    Registrarme
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                CONTACTO
+            =================================================== -->
+
+            <section
+                id="contacto"
+                class="contacto">
+
+                <div class="container text-center">
+
+                    <span class="texto-pequeno">
+                        CONTÁCTANOS
+                    </span>
+
+                    <h2>
+                        ¿Tienes alguna consulta?
+                    </h2>
+
+                    <p>
+                        Comunícate con nosotros para recibir
+                        más información sobre nuestros programas.
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/51967597813"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-success btn-lg">
+
+                        <i class="bi bi-whatsapp"></i>
+                        Escríbenos por WhatsApp
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ==================================================
+            FOOTER
+        =================================================== -->
+
+        <footer>
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+
+                    <div>
+
+                        <h3>EducaTech</h3>
+
+                        <p>
+                            Formación técnica para construir
+                            nuevas oportunidades.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>Enlaces</h4>
+
+                        <ul>
+
+                            <li>
+                                <a href="#inicio">Inicio</a>
+                            </li>
+
+                            <li>
+                                <a href="#programas">Programas</a>
+                            </li>
+
+                            <li>
+                                <a href="#experiencia">
+                                    Experiencia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#registro">
+                                    Registro
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>Contacto</h4>
+
+                        <p>
+                            WhatsApp: 967 597 813
+                        </p>
+
+                        <p>
+                            Correo:
+                            contacto@educatech.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+                <p class="text-center">
+                    © 2026 EducaTech.
+                    Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Nuestro JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
